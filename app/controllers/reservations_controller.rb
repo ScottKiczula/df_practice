@@ -1,11 +1,10 @@
 class ReservationsController < ApplicationController
   
   def index
-    @reservation = Reservation.all
+    @reservations = Reservation.all
   end
 
   def new
-    @customer = Customer.where(:id => params[:customer_id])
     @reservation = Reservation.new
   end
 
@@ -21,7 +20,7 @@ class ReservationsController < ApplicationController
 
   private
     def reservation_params
-      params.require(:reservation).permit(:customer_id, :table_id, :time)
+      params.require(:reservation).permit(:name, :guests, :table_id, :time)
     end
     
 end

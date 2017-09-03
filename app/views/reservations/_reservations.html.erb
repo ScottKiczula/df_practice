@@ -1,5 +1,5 @@
 <div class="column small-12 medium-7 large-6">
-  <h2>Reservastions</h2>
+  <h2>Reservations</h2>
   <table>
     <thead>
       <tr>
@@ -9,10 +9,10 @@
         <th width="150">Reservation Time</th>
       </tr>
     </thead>
-    <% @reservation.each do |reservation| %>
+    <% @reservations.each do |reservation| %>
       <tr>
-        <td><%= reservation.customer.name  %></td>
-        <td><%= reservation.customer.guests %></td>
+        <td><%= reservation.name  %></td>
+        <td><%= reservation.guests %></td>
         <td><%= reservation.table_id %></td>
         <td><%= reservation.time %></td>
       </tr>
