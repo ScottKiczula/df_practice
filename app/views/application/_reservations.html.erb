@@ -1,0 +1,21 @@
+<div class="column small-12 medium-7 large-6">
+  <h2>Reservastions</h2>
+  <table>
+    <thead>
+      <tr>
+        <th width="150">Name</th>
+        <th width="25">Guest</th>
+        <th width="25">Table Number</th>
+        <th width="150">Reservation Time</th>
+      </tr>
+    </thead>
+    <% @reservation.each do |reservation| %>
+      <tr>
+        <td><%= reservation.name  %></td>
+        <td><%= reservation.guest%></td>
+        <td><%= reservation.table_id %></td>
+        <td><%= reservation.time %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

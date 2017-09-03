@@ -1,0 +1,23 @@
+# Available Table
+Table.create(seats:2)
+Table.create(seats:2)
+Table.create(seats:2)
+Table.create(seats:2)
+Table.create(seats:4)
+Table.create(seats:4)
+Table.create(seats:6)
+Table.create(seats:6)
+Table.create(seats:8)
+Table.create(seats:8)
+
+# Reservation
+Reservation.create(table_id:1, name:"ABC", guest:1,time:"2018-01-01 00:00")
+Reservation.create(table_id:2, name:"DEF", guest:2,time:"2018-01-01 00:00")
+Reservation.create(table_id:3, name:"GHI", guest:1,time:"2018-01-01 00:00")
+Reservation.create(table_id:4, name:"JKL", guest:2,time:"2018-01-01 00:00")
+Reservation.create(table_id:5, name:"MNO", guest:3,time:"2018-01-01 00:00")
+Reservation.create(table_id:6, name:"PQR", guest:4,time:"2018-01-01 00:00")
+Reservation.create(table_id:7, name:"STU", guest:5,time:"2018-01-01 00:00")
+Reservation.create(table_id:8, name:"VWX", guest:6,time:"2018-01-01 00:00")
+Reservation.create(table_id:9, name:"YZ", guest:7,time:"2018-01-01 00:00")
+Reservation.create(table_id:10, name:"Bob", guest:8,time:"2018-01-01 00:00")
