@@ -4,4 +4,5 @@ class ApplicationController < ActionController::Base
     @reservation = Reservation.all
   end
 
+  protect_from_forgery with: :exception
 end
