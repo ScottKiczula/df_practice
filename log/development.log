@@ -8757,3 +8757,534 @@ Processing by ApplicationController#index as HTML
   Rendered application/_reservations.html.erb (1.5ms)
   Rendered application/index.html.erb within layouts/application (4.8ms)
 Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-09-03 14:17:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.9) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.9) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.4.1_1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/Cellar/ruby/2.4.1_1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/Cellar/ruby/2.4.1_1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCustomers (20170903190838)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "guests" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170903190838"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 2], ["created_at", "2017-09-03 19:24:19.329152"], ["updated_at", "2017-09-03 19:24:19.329152"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 2], ["created_at", "2017-09-03 19:24:19.333674"], ["updated_at", "2017-09-03 19:24:19.333674"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 2], ["created_at", "2017-09-03 19:24:19.336560"], ["updated_at", "2017-09-03 19:24:19.336560"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 2], ["created_at", "2017-09-03 19:24:19.339322"], ["updated_at", "2017-09-03 19:24:19.339322"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 4], ["created_at", "2017-09-03 19:24:19.341506"], ["updated_at", "2017-09-03 19:24:19.341506"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 4], ["created_at", "2017-09-03 19:24:19.343292"], ["updated_at", "2017-09-03 19:24:19.343292"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 6], ["created_at", "2017-09-03 19:24:19.344931"], ["updated_at", "2017-09-03 19:24:19.344931"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 6], ["created_at", "2017-09-03 19:24:19.346581"], ["updated_at", "2017-09-03 19:24:19.346581"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 8], ["created_at", "2017-09-03 19:24:19.349536"], ["updated_at", "2017-09-03 19:24:19.349536"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 8], ["created_at", "2017-09-03 19:24:19.351841"], ["updated_at", "2017-09-03 19:24:19.351841"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReservations (20170902045153)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "table_id" integer NOT NULL, "guest" integer NOT NULL, "time" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170902045153"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateTables (20170903030751)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "tables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "seats" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170903030751"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateCustomers (20170903190838)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "guests" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170903190838"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 2], ["created_at", "2017-09-03 19:26:26.295792"], ["updated_at", "2017-09-03 19:26:26.295792"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 2], ["created_at", "2017-09-03 19:26:26.299802"], ["updated_at", "2017-09-03 19:26:26.299802"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 2], ["created_at", "2017-09-03 19:26:26.302420"], ["updated_at", "2017-09-03 19:26:26.302420"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 2], ["created_at", "2017-09-03 19:26:26.304398"], ["updated_at", "2017-09-03 19:26:26.304398"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 4], ["created_at", "2017-09-03 19:26:26.306177"], ["updated_at", "2017-09-03 19:26:26.306177"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 4], ["created_at", "2017-09-03 19:26:26.308331"], ["updated_at", "2017-09-03 19:26:26.308331"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 6], ["created_at", "2017-09-03 19:26:26.310292"], ["updated_at", "2017-09-03 19:26:26.310292"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 6], ["created_at", "2017-09-03 19:26:26.312027"], ["updated_at", "2017-09-03 19:26:26.312027"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 8], ["created_at", "2017-09-03 19:26:26.313987"], ["updated_at", "2017-09-03 19:26:26.313987"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 8], ["created_at", "2017-09-03 19:26:26.315802"], ["updated_at", "2017-09-03 19:26:26.315802"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ABC"], ["guests", 1], ["created_at", "2017-09-03 19:26:26.322083"], ["updated_at", "2017-09-03 19:26:26.322083"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "DEF"], ["guests", 2], ["created_at", "2017-09-03 19:26:26.324646"], ["updated_at", "2017-09-03 19:26:26.324646"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "GHI"], ["guests", 1], ["created_at", "2017-09-03 19:26:26.326528"], ["updated_at", "2017-09-03 19:26:26.326528"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "JKL"], ["guests", 2], ["created_at", "2017-09-03 19:26:26.328539"], ["updated_at", "2017-09-03 19:26:26.328539"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MNO"], ["guests", 3], ["created_at", "2017-09-03 19:26:26.330409"], ["updated_at", "2017-09-03 19:26:26.330409"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "PQR"], ["guests", 4], ["created_at", "2017-09-03 19:26:26.332204"], ["updated_at", "2017-09-03 19:26:26.332204"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "STU"], ["guests", 5], ["created_at", "2017-09-03 19:26:26.334301"], ["updated_at", "2017-09-03 19:26:26.334301"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "VWX"], ["guests", 6], ["created_at", "2017-09-03 19:26:26.336146"], ["updated_at", "2017-09-03 19:26:26.336146"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "YZ"], ["guests", 7], ["created_at", "2017-09-03 19:26:26.337883"], ["updated_at", "2017-09-03 19:26:26.337883"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bob"], ["guests", 8], ["created_at", "2017-09-03 19:26:26.339741"], ["updated_at", "2017-09-03 19:26:26.339741"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReservations (20170902045153)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "reservations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "table_id" integer NOT NULL, "customer_id" integer NOT NULL, "time" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170902045153"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateTables (20170903030751)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "tables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "seats" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170903030751"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateCustomers (20170903190838)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "guests" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170903190838"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 2], ["created_at", "2017-09-03 19:28:09.076800"], ["updated_at", "2017-09-03 19:28:09.076800"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 2], ["created_at", "2017-09-03 19:28:09.080456"], ["updated_at", "2017-09-03 19:28:09.080456"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 2], ["created_at", "2017-09-03 19:28:09.082488"], ["updated_at", "2017-09-03 19:28:09.082488"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 2], ["created_at", "2017-09-03 19:28:09.084678"], ["updated_at", "2017-09-03 19:28:09.084678"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 4], ["created_at", "2017-09-03 19:28:09.086532"], ["updated_at", "2017-09-03 19:28:09.086532"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 4], ["created_at", "2017-09-03 19:28:09.088948"], ["updated_at", "2017-09-03 19:28:09.088948"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 6], ["created_at", "2017-09-03 19:28:09.091207"], ["updated_at", "2017-09-03 19:28:09.091207"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 6], ["created_at", "2017-09-03 19:28:09.092940"], ["updated_at", "2017-09-03 19:28:09.092940"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["seats", 8], ["created_at", "2017-09-03 19:28:09.094644"], ["updated_at", "2017-09-03 19:28:09.094644"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tables" ("seats", "created_at", "updated_at") VALUES (?, ?, ?)  [["seats", 8], ["created_at", "2017-09-03 19:28:09.096316"], ["updated_at", "2017-09-03 19:28:09.096316"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ABC"], ["guests", 1], ["created_at", "2017-09-03 19:28:09.102456"], ["updated_at", "2017-09-03 19:28:09.102456"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "DEF"], ["guests", 2], ["created_at", "2017-09-03 19:28:09.104522"], ["updated_at", "2017-09-03 19:28:09.104522"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "GHI"], ["guests", 1], ["created_at", "2017-09-03 19:28:09.107374"], ["updated_at", "2017-09-03 19:28:09.107374"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "JKL"], ["guests", 2], ["created_at", "2017-09-03 19:28:09.113771"], ["updated_at", "2017-09-03 19:28:09.113771"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "MNO"], ["guests", 3], ["created_at", "2017-09-03 19:28:09.119147"], ["updated_at", "2017-09-03 19:28:09.119147"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "PQR"], ["guests", 4], ["created_at", "2017-09-03 19:28:09.122317"], ["updated_at", "2017-09-03 19:28:09.122317"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "STU"], ["guests", 5], ["created_at", "2017-09-03 19:28:09.125407"], ["updated_at", "2017-09-03 19:28:09.125407"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "VWX"], ["guests", 6], ["created_at", "2017-09-03 19:28:09.130023"], ["updated_at", "2017-09-03 19:28:09.130023"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "YZ"], ["guests", 7], ["created_at", "2017-09-03 19:28:09.134755"], ["updated_at", "2017-09-03 19:28:09.134755"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "customers" ("name", "guests", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bob"], ["guests", 8], ["created_at", "2017-09-03 19:28:09.138767"], ["updated_at", "2017-09-03 19:28:09.138767"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_id", 1], ["table_id", 1], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.147190"], ["updated_at", "2017-09-03 19:28:09.147190"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["customer_id", 2], ["table_id", 2], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.149701"], ["updated_at", "2017-09-03 19:28:09.149701"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_id", 3], ["table_id", 3], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.152636"], ["updated_at", "2017-09-03 19:28:09.152636"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["customer_id", 4], ["table_id", 4], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.154689"], ["updated_at", "2017-09-03 19:28:09.154689"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_id", 5], ["table_id", 5], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.156722"], ["updated_at", "2017-09-03 19:28:09.156722"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["customer_id", 6], ["table_id", 6], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.158649"], ["updated_at", "2017-09-03 19:28:09.158649"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_id", 7], ["table_id", 7], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.160785"], ["updated_at", "2017-09-03 19:28:09.160785"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["customer_id", 8], ["table_id", 8], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.163088"], ["updated_at", "2017-09-03 19:28:09.163088"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_id", 9], ["table_id", 9], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.165171"], ["updated_at", "2017-09-03 19:28:09.165171"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "reservations" ("customer_id", "table_id", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["customer_id", 10], ["table_id", 10], ["time", "2018-01-01 00:00:00.000000"], ["created_at", "2017-09-03 19:28:09.167198"], ["updated_at", "2017-09-03 19:28:09.167198"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2017-09-03 14:28:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered application/_otherform.html.erb (0.9ms)
+  [1m[35mReservation Load (0.5ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered application/_reservations.html.erb (26.1ms)
+  Rendered application/index.html.erb within layouts/application (36.8ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `name' for #<Reservation:0x007f8fc136fee0>):
+    11:     </thead>
+    12:     <% @reservation.each do |reservation| %>
+    13:       <tr>
+    14:         <td><%= reservation.name  %></td>
+    15:         <td><%= reservation.guest%></td>
+    16:         <td><%= reservation.table_id %></td>
+    17:         <td><%= reservation.time %></td>
+  app/views/application/_reservations.html.erb:14:in `block in _app_views_application__reservations_html_erb___58153811986335664_70127699472740'
+  app/views/application/_reservations.html.erb:12:in `_app_views_application__reservations_html_erb___58153811986335664_70127699472740'
+  app/views/application/index.html.erb:6:in `_app_views_application_index_html_erb__1709413582286471294_70127703608080'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.2ms)
+
+
+Started GET "/" for ::1 at 2017-09-03 14:29:21 -0500
+Processing by ApplicationController#index as HTML
+  Rendered application/_otherform.html.erb (0.0ms)
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered application/_reservations.html.erb (19.6ms)
+  Rendered application/index.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `guest' for #<Reservation:0x007f8fc0e6f0a8>):
+    12:     <% @reservation.each do |reservation| %>
+    13:       <tr>
+    14:         <td><%= reservation.customer.name  %></td>
+    15:         <td><%= reservation.guest%></td>
+    16:         <td><%= reservation.table_id %></td>
+    17:         <td><%= reservation.time %></td>
+    18:       </tr>
+  app/views/application/_reservations.html.erb:15:in `block in _app_views_application__reservations_html_erb___58153811986335664_70127696736360'
+  app/views/application/_reservations.html.erb:12:in `_app_views_application__reservations_html_erb___58153811986335664_70127696736360'
+  app/views/application/index.html.erb:6:in `_app_views_application_index_html_erb__1709413582286471294_70127703608080'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.4ms)
+
+
+Started GET "/" for ::1 at 2017-09-03 14:29:31 -0500
+Processing by ApplicationController#index as HTML
+  Rendered application/_otherform.html.erb (0.0ms)
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered application/_reservations.html.erb (8.7ms)
+  Rendered application/index.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `custoerm' for #<Reservation:0x007f8fc0f145f8>
+Did you mean?  customer
+               customer=):
+    12:     <% @reservation.each do |reservation| %>
+    13:       <tr>
+    14:         <td><%= reservation.customer.name  %></td>
+    15:         <td><%= reservation.custoerm.guest%></td>
+    16:         <td><%= reservation.table_id %></td>
+    17:         <td><%= reservation.time %></td>
+    18:       </tr>
+  app/views/application/_reservations.html.erb:15:in `block in _app_views_application__reservations_html_erb___58153811986335664_70127697066300'
+  app/views/application/_reservations.html.erb:12:in `_app_views_application__reservations_html_erb___58153811986335664_70127697066300'
+  app/views/application/index.html.erb:6:in `_app_views_application_index_html_erb__1709413582286471294_70127703608080'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.7ms)
+
+
+Started GET "/" for ::1 at 2017-09-03 14:29:38 -0500
+Processing by ApplicationController#index as HTML
+  Rendered application/_otherform.html.erb (0.0ms)
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered application/_reservations.html.erb (9.6ms)
+  Rendered application/index.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `guest' for #<Customer:0x007f8fc0da3db8>
+Did you mean?  guests
+               guests=
+               guests?):
+    12:     <% @reservation.each do |reservation| %>
+    13:       <tr>
+    14:         <td><%= reservation.customer.name  %></td>
+    15:         <td><%= reservation.customer.guest%></td>
+    16:         <td><%= reservation.table_id %></td>
+    17:         <td><%= reservation.time %></td>
+    18:       </tr>
+  app/views/application/_reservations.html.erb:15:in `block in _app_views_application__reservations_html_erb___58153811986335664_70127699704800'
+  app/views/application/_reservations.html.erb:12:in `_app_views_application__reservations_html_erb___58153811986335664_70127699704800'
+  app/views/application/index.html.erb:6:in `_app_views_application_index_html_erb__1709413582286471294_70127703608080'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.3ms)
+
+
+Started GET "/" for ::1 at 2017-09-03 14:29:49 -0500
+Processing by ApplicationController#index as HTML
+  Rendered application/_otherform.html.erb (0.0ms)
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered application/_reservations.html.erb (6.9ms)
+  Rendered application/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `guest' for #<Customer:0x007f8fc13cf4a8>
+Did you mean?  guests
+               guests=
+               guests?):
+    12:     <% @reservation.each do |reservation| %>
+    13:       <tr>
+    14:         <td><%= reservation.customer.name  %></td>
+    15:         <td><%= reservation.customer.guest %></td>
+    16:         <td><%= reservation.table_id %></td>
+    17:         <td><%= reservation.time %></td>
+    18:       </tr>
+  app/views/application/_reservations.html.erb:15:in `block in _app_views_application__reservations_html_erb___58153811986335664_70127703558460'
+  app/views/application/_reservations.html.erb:12:in `_app_views_application__reservations_html_erb___58153811986335664_70127703558460'
+  app/views/application/index.html.erb:6:in `_app_views_application_index_html_erb__1709413582286471294_70127703608080'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.2ms)
+
+
+Started GET "/" for ::1 at 2017-09-03 14:30:00 -0500
+Processing by ApplicationController#index as HTML
+  Rendered application/_otherform.html.erb (0.0ms)
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered application/_reservations.html.erb (7.4ms)
+  Rendered application/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 361ms (Views: 359.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/reservations/new" for ::1 at 2017-09-03 14:30:41 -0500
+Processing by ReservationsController#new as HTML
+  Rendered reservations/new.html.erb within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `name' for #<Reservation:0x007f8fc49334f0>):
+    19: 
+    20:     <div class="column">
+    21:       <%= f.label :name %>
+    22:       <%= f.text_field :name %>
+    23:     </div>
+    24: 
+    25:     <div class="column">
+  app/views/reservations/new.html.erb:22:in `block in _app_views_reservations_new_html_erb___3761030842175395879_70127727464620'
+  app/views/reservations/new.html.erb:4:in `_app_views_reservations_new_html_erb___3761030842175395879_70127727464620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.8ms)
