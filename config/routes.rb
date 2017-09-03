@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'application#index'
 
-  resources:reservations
+  resources :customers
+  resources :reservations
 
 
   # Example of regular route:

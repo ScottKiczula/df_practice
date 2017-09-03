@@ -1,16 +1,16 @@
 <div class="row">
   <div class="column small-12 medium-5 large-6">
 
-  <%= form_for @reservation do |f| %>
+  <%= form_for @customer do |f| %>
    
-    <% if @reservation.errors.any? %>
+    <% if @customer.errors.any? %>
       <div id="error_explanation">
         <h2>
-          <%= pluralize(@reservation.errors.count, "error") %> prohibited
-          this reservation from being saved:
+          <%= pluralize(@customer.errors.count, "error") %> prohibited
+          this customer from being saved:
         </h2>
         <ul>
-          <% @reservation.errors.full_messages.each do |msg| %>
+          <% @customer.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
           <% end %>
         </ul>
@@ -18,12 +18,13 @@
     <% end %>
 
     <div class="column">
-      <%= f.label :table_id %>
-      <%= f.text_field :table_id %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
     </div>
 
     <div class="column">
-      <%= datetime_select :reservation, :time %>
+      <%= f.label :guests %>
+      <%= f.text_field :guests %>
     </div>
 
     <div class="column">
