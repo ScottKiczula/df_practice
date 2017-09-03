@@ -11,8 +11,8 @@
     </thead>
     <% @reservation.each do |reservation| %>
       <tr>
-        <td><%= reservation.name  %></td>
-        <td><%= reservation.guest%></td>
+        <td><%= reservation.customer.name  %></td>
+        <td><%= reservation.customer.guests %></td>
         <td><%= reservation.table_id %></td>
         <td><%= reservation.time %></td>
       </tr>
