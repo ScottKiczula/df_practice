@@ -11879,3 +11879,4 @@ Processing by ReservationsController#new as HTML
   Rendered reservations/_form.html.erb (3.4ms)
   Rendered reservations/new.html.erb within layouts/application (5.2ms)
 Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+  [1m[36mTable Load (1.6ms)[0m  [1mSELECT "tables".* FROM "tables"[0m
