@@ -14,7 +14,7 @@ class ReservationsController < ApplicationController
     if @reservation.save
       redirect_to root_path
     else
-      render root_path
+      render :new
     end
   end
 
