@@ -1,36 +1,36 @@
-<div class="row float-center">
-  <%= form_for @reservation do |f| %>
-   
-    <% if @reservation.errors.any? %>
-      <div id="error_explanation">
-        <h2>
-          <%= pluralize(@reservation.errors.count, "error") %> prohibited
-          this reservation from being saved:
-        </h2>
-        <ul>
-          <% @reservation.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-        </ul>
-      </div>
+<div class="column float-center">
+  <div class="row text-center">
+    <%= form_for @reservation do |f| %>
+      <% if @reservation.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@reservation.errors.count, "error") %> prohibited
+            this reservation from being saved:
+          </h2>
+          <ul class="no-bullet">
+            <% @reservation.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
     <% end %>
+  </div>
 
 
-
-    <div class="column">
+    <div class="row large-4">
       <%= f.text_field :name, placeholder: "Name" %>
     </div>
 
-    <div class="column">
+    <div class="row large-4">
       <%= f.text_field :guests, placeholder: "Number of Guests" %>
     </div>
 
-    <div class="column">
+    <div class="row large-4">
       <%= f.datetime_select :time, discard_minute: true, ampm: true %>
       <input type="hidden" id="reservation_time_5i" name="reservation[time(5i)]" value="0">
     </div>
 
-    <div class="column">
+    <div class="row large-4">
       <p>
         <%= f.submit class: "button" %>
       </p>

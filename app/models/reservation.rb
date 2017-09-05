@@ -42,6 +42,10 @@ class Reservation < ActiveRecord::Base
       table_collection << table.id
     end
     availiable_reservations = table_collection - reserved_tables
+    p availiable_reservations
+    p availiable_reservations
+    p availiable_reservations
+    p availiable_reservations
   end
 
   def enough_seats

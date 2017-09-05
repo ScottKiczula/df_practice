@@ -1,6 +1,11 @@
 <div class="row">
-  <h1 class="text-center">Fancy</h1>
-</div>
-  <%= link_to 'New Reservation', new_reservation_path, class: "button round" %>
-  <%= render 'reservations' %>
+  <div class="small 6 large-centered columns">
+    <h1 class="text-center">Fancy</h1>
+  </div>
+  <div class="small 6 large-centered columns">
+    <%= link_to 'New Reservation', new_reservation_path, class: "button round" %>
+  </div>
+  <div class="small 6 large-centered columns">
+    <%= render 'reservations' %>
+  </div>
 </div>
