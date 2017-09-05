@@ -3,6 +3,10 @@ class Table < ActiveRecord::Base
 
   validates :seats, presence: true
 
+  def self.all_tables
+    Table.all
+  end
+
   def self.total_tables
     Table.all.count
   end
