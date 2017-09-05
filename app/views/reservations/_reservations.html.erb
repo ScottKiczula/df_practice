@@ -1,21 +1,19 @@
-<div class="row">
-  <h2>Reservations</h2>
-  <table>
-    <thead>
-      <tr>
-        <th width="150">Name</th>
-        <th width="25">Guests</th>
-        <th width="25">Table Number</th>
-        <th width="150">Reservation Time</th>
-      </tr>
-    </thead>
-    <% @reservations.each do |reservation| %>
-      <tr>
-        <td><%= reservation.name  %></td>
-        <td><%= reservation.guests %></td>
-        <td><%= reservation.table_id %></td>
-        <td><%= reservation.time.to_formatted_s(:long) %></td>
-      </tr>
-    <% end %>
-  </table>
-</div>
+<h2 class="text-center">Reservations</h2>
+<table>
+  <thead>
+    <tr>
+      <th width="150">Name</th>
+      <th width="25">Guests</th>
+      <th width="25">Table Number</th>
+      <th width="150">Reservation Time</th>
+    </tr>
+  </thead>
+  <% @reservations.each do |reservation| %>
+    <tr>
+      <td><%= reservation.name  %></td>
+      <td><%= reservation.guests %></td>
+      <td><%= reservation.table_id %></td>
+      <td><%= reservation.time.to_formatted_s(:long) %></td>
+    </tr>
+  <% end %>
+</table>

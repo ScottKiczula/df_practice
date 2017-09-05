@@ -1,11 +1,17 @@
 <div class="row">
-  <div class="small 6 large-centered columns">
-    <h1 class="text-center">Fancy</h1>
+  <div class="text-center">
+    <% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+    <% end %>
   </div>
-  <div class="small 6 large-centered columns">
-    <%= link_to 'New Reservation', new_reservation_path, class: "button round" %>
+  <div class="row">
+    <div class="small-3 small-centered column">
+      <%= link_to 'New Reservation', new_reservation_path, class: "button round" %>
+    </div>
   </div>
-  <div class="small 6 large-centered columns">
-    <%= render 'reservations' %>
+  <div class="row"> 
+    <div class="small-6 small-centered column">
+      <%= render 'reservations' %>
+    </div>
   </div>
 </div>
