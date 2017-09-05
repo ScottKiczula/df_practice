@@ -4,10 +4,10 @@ class Reservation < ActiveRecord::Base
   validates :table_id, presence: true
   validates :time, presence: true
 
-  validate :reserved_tables
-  validate :reservation_available
-  validate :enough_seats
-  # validate :assign_reservation
+  validate :assign_reservation
+  # validate :reserved_tables
+  # validate :reservation_available
+  # validate :enough_seats
 
   def assign_reservation
     self.table_id = enough_seats
@@ -25,19 +25,15 @@ class Reservation < ActiveRecord::Base
     reservation_time = self.time
     unavailable_tables = []
     matching_reservation_times = Reservation.all.where(time: reservation_time)
-    matching_reservation_times.each do |reservation|
-      unavailable_tables << reservation.table_id
-    end
+    matching_reservation_times.each{|reservation| unavailable_tables << reservation.table_id}
     unavailable_tables
   end
 
   def available_tables
-    all_tables = Table.all
+    all_tables = Table.all_tables
     table_collection = []
-    all_tables.each do |table|
-      table_collection << table.id
-    end
-    availiable_reservations = table_collection - reserved_tables
+    all_tables.each{|table| table_collection << table.id}
+    table_collection - reserved_tables
   end
 
   def enough_seats
