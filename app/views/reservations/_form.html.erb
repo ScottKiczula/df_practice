@@ -1,7 +1,4 @@
-<div class="row">
-  <h1></h1>
-  <div class="column small-12 medium-5 large-6">
-
+<div class="row float-center">
   <%= form_for @reservation do |f| %>
    
     <% if @reservation.errors.any? %>
@@ -32,6 +29,7 @@
 
     <div class="column">
       <%= f.datetime_select :time, discard_minute: true, ampm: true %>
+      <input type="hidden" id="reservation_time_5i" name="reservation[time(5i)]" value="0">
     </div>
 
     <div class="column">
@@ -41,5 +39,4 @@
     </div>
    
   <% end %>
-  </div>
 </div> 
