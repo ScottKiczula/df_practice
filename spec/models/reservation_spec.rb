@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe Reservation, :type => :model do
   subject { Reservation.new }
-  table = {Table.new}
 
   it "is valid with valid attributes" do
     subject.id = "1"
