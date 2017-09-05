@@ -4,19 +4,35 @@ class Reservation < ActiveRecord::Base
   validates :table_id, presence: true
   validates :time, presence: true
 
+  validate :reserved_tables
   validate :enough_seats
 
   def reservation_available
-    # Get the time of the reservation
-    #reservation_time = self.time
-    # Find all other reservations
-    #all_reservations = Reservation.all
-    # Narrow it down to the same time as the current reservation
-    #all_reservations.where(:time == reservation_time)
-    # If there are none continue with the reservation
-    # Else if there are exclude those table IDs
-    # See if there is a table left that can fit the reservation
-    # If not return error that there is no room to fit your reservation
+    reserved_tables
+  end
+
+  def reserved_tables
+    reservation_time = self.time
+    reserved_tables = []
+    matching_reservation_times = Reservation.all.where(time: reservation_time)
+    matching_reservation_times.each do |reservation|
+      reserved_tables << reservation
+    end
+
+    if reserved_tables.count >= Table.total_tables
+      self.errors.add(:table_id, "There are no tables abvailable at your reservation time.")
+    else
+      p reserved_tables
+      reserved_tables
+    end
+  end
+
+  def avilable_tables
+    all_tables = Tables.all
+  availiable_tables = all_tables
+  # reserved_table_ids = []
+  #   reserved_tables.each do |table|
+  # end
   end
 
   def enough_seats
@@ -26,5 +42,7 @@ class Reservation < ActiveRecord::Base
     else
     end
   end
-
+    # Else if there are exclude those table IDs
+    # See if there is a table left that can fit the reservation
+    # If not return error that there is no room to fit your reservation
 end
