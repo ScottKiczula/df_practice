@@ -10,8 +10,7 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
-    @reservation.reservation_available
-    @reservation.enough_seats
+    @reservation.assign_reservation
 
     if @reservation.save
       redirect_to root_path
