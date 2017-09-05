@@ -5,10 +5,15 @@ class Reservation < ActiveRecord::Base
   validates :time, presence: true
 
   validate :reserved_tables
-  validate :enough_seats
+  validate :reservation_available
+  # validate :enough_seats
 
   def reservation_available
-    reserved_tables
+    if reserved_tables.count >= Table.total_tables
+      self.errors.add(:table_id, "There are no tables abvailable at your reservation time.")
+    else
+      available_tables
+    end
   end
 
   def reserved_tables
@@ -16,30 +21,30 @@ class Reservation < ActiveRecord::Base
     reserved_tables = []
     matching_reservation_times = Reservation.all.where(time: reservation_time)
     matching_reservation_times.each do |reservation|
-      reserved_tables << reservation
+      reserved_tables << reservation.table_id
     end
-
-    if reserved_tables.count >= Table.total_tables
-      self.errors.add(:table_id, "There are no tables abvailable at your reservation time.")
-    else
-      p reserved_tables
-      reserved_tables
-    end
+    reserved_tables
+    # if reserved_tables.count >= Table.total_tables
+    #   self.errors.add(:table_id, "There are no tables abvailable at your reservation time.")
+    # else
+    #   reserved_tables
+    # end
   end
 
-  def avilable_tables
-    all_tables = Tables.all
-  availiable_tables = all_tables
-  # reserved_table_ids = []
-  #   reserved_tables.each do |table|
-  # end
+  def available_tables
+    all_tables = Table.all
+    table_collection = []
+    all_tables.each do |table|
+      table_collection << table.id
+    end
+    availiable_reservations = table_collection - reserved_tables
   end
 
   def enough_seats
+    puts "your available reservations are #{availiable_reservations}"
     table = Table.find(self.table_id)
     if table.seats < self.guests
       self.errors.add(:table_id, "There is not enough seats for your party.")
-    else
     end
   end
     # Else if there are exclude those table IDs

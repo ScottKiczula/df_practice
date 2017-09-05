@@ -13,7 +13,6 @@ class ReservationsController < ApplicationController
     @reservation.reservation_available
 
     if @reservation.save
-      p @reservation
       redirect_to root_path
     else
       render :new
