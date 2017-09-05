@@ -13,6 +13,7 @@ class ReservationsController < ApplicationController
     @reservation.assign_reservation
 
     if @reservation.save
+      flash[:notice] = "Reservation sucessfully created"
       redirect_to root_path
     else
       render :new
