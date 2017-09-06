@@ -12,7 +12,7 @@ class Reservation < ActiveRecord::Base
 
   def reserved_tables
     unavailable_tables = []
-    matching_reservation_times = Reservation.all.where(time: self.time)
+    matching_reservation_times = Reservation.where(time: time)
     matching_reservation_times.each{|reservation| unavailable_tables << reservation.table_id}
     unavailable_tables
   end
