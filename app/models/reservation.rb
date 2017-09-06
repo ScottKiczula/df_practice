@@ -5,44 +5,33 @@ class Reservation < ActiveRecord::Base
   validates :time, presence: true
 
   validate :assign_reservation
-  # validate :reserved_tables
-  # validate :reservation_available
-  # validate :enough_seats
 
   def assign_reservation
-    self.table_id = enough_seats
+    self.table_id = find_table_for_reservation
   end
 
-  def reservation_available
-    if reserved_tables.count >= Table.total_tables
-      self.errors.add(:table_id, "There are no tables abvailable at your reservation time.")
-    else
-      enough_seats
+  private
+    def reserved_tables
+      unavailable_tables = []
+      matching_reservation_times = Reservation.where(time: time)
+      matching_reservation_times.each{|reservation| unavailable_tables << reservation.table_id}
+      unavailable_tables
     end
-  end
 
-  def reserved_tables
-    reservation_time = self.time
-    unavailable_tables = []
-    matching_reservation_times = Reservation.all.where(time: reservation_time)
-    matching_reservation_times.each{|reservation| unavailable_tables << reservation.table_id}
-    unavailable_tables
-  end
+    def available_tables
+      all_tables = Table.all
+      table_collection = []
+      all_tables.each{|table| table_collection << table.id}
+      table_collection - reserved_tables
+    end
 
-  def available_tables
-    all_tables = Table.all_tables
-    table_collection = []
-    all_tables.each{|table| table_collection << table.id}
-    table_collection - reserved_tables
-  end
-
-  def enough_seats
-    available_tables.each do |table|
-      possible_match = Table.find(table)
-      if possible_match.seats >= self.guests
-        return possible_match.id
+    def find_table_for_reservation
+      available_tables.each do |table|
+        possible_match = Table.find(table)
+        if possible_match.seats >= self.guests
+          return possible_match.id
+        end
       end
+      self.errors.add(:table_id, "There is not enough seats for your party.")
     end
-    self.errors.add(:table_id, "There is not enough seats for your party.")
-  end
 end
